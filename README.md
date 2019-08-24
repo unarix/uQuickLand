@@ -1,2 +1,2 @@
 # quickland
-Quick Landing Pages: Create your landing in minutes
+QuickLanding: Create your landing in minutes
