@@ -1,0 +1,14 @@
+/home/unarix/Documentos/code/quickland/bin/Debug/netcoreapp2.1/quickland.deps.json
+/home/unarix/Documentos/code/quickland/bin/Debug/netcoreapp2.1/quickland.runtimeconfig.json
+/home/unarix/Documentos/code/quickland/bin/Debug/netcoreapp2.1/quickland.runtimeconfig.dev.json
+/home/unarix/Documentos/code/quickland/bin/Debug/netcoreapp2.1/quickland.dll
+/home/unarix/Documentos/code/quickland/bin/Debug/netcoreapp2.1/quickland.pdb
+/home/unarix/Documentos/code/quickland/obj/Debug/netcoreapp2.1/quickland.csprojAssemblyReference.cache
+/home/unarix/Documentos/code/quickland/obj/Debug/netcoreapp2.1/quickland.csproj.CoreCompileInputs.cache
+/home/unarix/Documentos/code/quickland/obj/Debug/netcoreapp2.1/quickland.RazorAssemblyInfo.cache
+/home/unarix/Documentos/code/quickland/obj/Debug/netcoreapp2.1/quickland.RazorAssemblyInfo.cs
+/home/unarix/Documentos/code/quickland/obj/Debug/netcoreapp2.1/quickland.AssemblyInfoInputs.cache
+/home/unarix/Documentos/code/quickland/obj/Debug/netcoreapp2.1/quickland.AssemblyInfo.cs
+/home/unarix/Documentos/code/quickland/obj/Debug/netcoreapp2.1/quickland.RazorTargetAssemblyInfo.cache
+/home/unarix/Documentos/code/quickland/obj/Debug/netcoreapp2.1/quickland.dll
+/home/unarix/Documentos/code/quickland/obj/Debug/netcoreapp2.1/quickland.pdb
