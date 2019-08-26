@@ -264,7 +264,7 @@ blockquote {
 }
 
 /* Carrousel */
-#carr {
+#testimonials {
   color: white;
   background-image: url(../img/infinite-loop-02.jpg);
   background-size: cover;
@@ -274,7 +274,7 @@ blockquote {
 }
 
 @media (max-width: 991px) {
-  #carr {
+  #testimonials {
     background-image: url(../img/infinite-loop-02-mobile.jpg);
   }
 }

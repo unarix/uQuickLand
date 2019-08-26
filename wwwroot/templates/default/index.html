@@ -39,7 +39,7 @@
                     <a class="nav-link tm-nav-link" href="#secdos">{{ qland_notatitulo }}</a>
                 </li>
                 <li class="nav-item">
-                  <a v-if="qland_ver_carrousel" class="nav-link tm-nav-link" href="#carr">{{ qland_carrousel_titulo }}</a>
+                  <a v-if="qland_ver_carrousel" class="nav-link tm-nav-link" href="#testimonials">{{ qland_carrousel_titulo }}</a>
                 </li>
                 <!--li class="nav-item">
                     <a class="nav-link tm-nav-link" href="#gallery">Gallery</a>
@@ -118,7 +118,7 @@
           </div>
       </section>
       
-      <section id="carr" class="tm-section-pad-top tm-parallax-2">      
+      <section id="testimonials" class="tm-section-pad-top tm-parallax-2">      
         <div v-if="qland_ver_carrousel" class="container tm-testimonials-content">
           <div class="row">
             <div class="col-lg-12 tm-content-box">
@@ -133,11 +133,13 @@
 
               <div class="mx-auto tm-gallery-container tm-gallery-container-2">
                 <div class="tm-testimonials-carousel">
+
                   <figure v-for="seccion in carrousel" class="tm-testimonial-item">
-                    <img v-bind:src="seccion.imagen" alt="Image" class="img-fluid mx-auto">
-                    <blockquote>{{ seccion.texto }}</blockquote>
-                    <figcaption>{{ seccion.firma }}</figcaption>
+                      <img v-bind:src="seccion.imagen" alt="Image" class="img-fluid mx-auto">
+                      <blockquote>{{ seccion.texto }}</blockquote>
+                      <figcaption>{{ seccion.firma }}</figcaption>
                   </figure>
+
                 </div>
               </div>
             </div>
@@ -310,61 +312,31 @@
       del template se identifiquen y puedan armar los controles de edicion el usuario)
       */
 
-      /*jQuery.loadScript = function (url, callback) {
-        jQuery.ajax({
-            url: url,
-            dataType: 'script',
-            success: callback,
-            async: true
-        });
-      }
-      
       var urlParams = new URLSearchParams(window.location.search);
 
       if(urlParams.has('id'))
+        loadQland(urlParams.get('id'));
+      else
+        loadQland('default');
+
+      function loadQland(id)
       {
-        if (typeof someObject == 'undefined') $.loadScript('implements/'+ urlParams.get('id') +'.js', function(){
+        $.getJSON("json/" + id + ".json", function(json) {
+                //console.log(json); 
+                load(json);
         });
       }
-      else
-      {
-        if (typeof someObject == 'undefined') $.loadScript('implements/default.js', function(){
-        });
-      }*/
 
-      var app = new Vue({
-        el: '#qland',
-        data: {
-          /* Seccion Bienvenidos */
-          qland_titulo: 'Titulo ejemplo',
-          qland_subtitulo: 'Bienvenido!',
-          qland_subtexto: 'Este es un texto de bienvenida que no puede ser muy largo.',
-          qland_notatitulo: 'Que hacemos?',
-          qland_notatexto: 'Nosotros escribimos el texto de la seccion aca... este texto descriptivo puede ser un muy, muy pero muy largo texto; la seccion esta preparada para que puedas insertar bastante texto aqui, asique se creativo y usa muy bien la cabeza.',
-          /* Seccion que hacemos */
-          qland_opcion_uno_titulo: 'Que ta la opción uno?',
-          qland_opcion_uno_texto: 'Este es el texto de la opcion para describir algo. Muchas veces presentar opciones ejemplifican lo que trataste de decir en el parrafo anterior.',
-          qland_opcion_dos_titulo: 'Quizas te guste la opcion dos',
-          qland_opcion_dos_texto: 'Este podria ser el texto que describe la opcion dos, quizas los usuarios quieran elegir o bien pudes usarlo para decorar.',
-          /* Seccion Carrousel */
-          qland_ver_carrousel: true,
-          qland_carrousel_titulo: 'Carrousel',
-          qland_carrousel_texto: 'Este es el texto descriptivo del carrousel',
-          carrousel: [
-            { imagen: 'img/testimonial-img-02.jpg', texto: 'Cuando pense en esto crehi que hiba a ser una locura, pero resulto ser una porqueria...', firma: 'Juan Pablo Pelotas' }
-          ],
-          /* Seccion contacto */
-          qland_contacto_titulo: 'Contactenos',
-          qland_contacto_texto: 'Este texto sirve para que comuniques lo bueno y divertido que es contactarse con nuestro contact center.',
-          qland_ver_chat: false,
-          qland_chat_texto: "Abrir Chat para saber mas",
-          qland_mail: 'ntello@aa2000.com.ar',
-          qland_telefono : '4578-0579',
-          qland_ubicacion : 'Donde estamos'
-          /* Footer */ 
-          
-        }
-      })
+      function load(json)
+      {
+        // Carga y vindea el vue.js
+        var app = new Vue({
+                  el: '#qland',
+                  data: json
+                });
+        // Carga el resto de la pagina.
+        load_rest();
+      }
 
       /* ----------------------------------------------------- */
       /* END VUE BINDINGS                                      */
@@ -432,11 +404,11 @@
         });
       };
       
-      $(function(){
+      function load_rest (){
         // Hero Section - Background Parallax
         background_image_parallax($(".tm-parallax"), 0.30, false);
         background_image_parallax_2($("#contact"), 0.80);   
-        background_image_parallax_2($("#carr"), 0.80);   
+        background_image_parallax_2($("#testimonials"), 0.80);   
         
         // Handle window resize
         window.addEventListener('resize', function(){
@@ -551,7 +523,7 @@
           }
         ]
         });
-      });
+      };
     </script>
   </body>
 </html>

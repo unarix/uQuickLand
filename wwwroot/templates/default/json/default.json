@@ -1,0 +1,49 @@
+{
+             
+    "qland_titulo": "Plantilla Default",
+    "qland_subtitulo": "Como estas?",
+    "qland_subtexto": "Este es un texto de bienvenida que no puede ser muy largo.",
+    "qland_notatitulo": "Que hacemos?",
+    "qland_notatexto": "Nosotros escribimos el texto de la seccion aca... este texto descriptivo puede ser un muy, muy pero muy largo texto; la seccion esta preparada para que puedas insertar bastante texto aqui, asique se creativo y usa muy bien la cabeza.",
+    
+    "qland_opcion_uno_titulo": "Que ta la opción uno?",
+    "qland_opcion_uno_texto": "Este es el texto de la opcion para describir algo. Muchas veces presentar opciones ejemplifican lo que trataste de decir en el parrafo anterior.",
+    "qland_opcion_dos_titulo": "Quizas te guste la opcion dos",
+    "qland_opcion_dos_texto": "Este podria ser el texto que describe la opcion dos, quizas los usuarios quieran elegir o bien pudes usarlo para decorar.",
+    
+    "qland_ver_carrousel": true,
+    "qland_carrousel_titulo": "Carrousel",
+    "qland_carrousel_texto": "Este es el texto descriptivo del carrousel",
+    "carrousel": 
+    [
+        { 
+            "imagen": "img/testimonial-img-02.jpg", 
+            "texto": "Cuando pense en esto crehi que hiba a ser una locura, pero resulto ser una terrible locura...", 
+            "firma": "Juan Pablo Pelotas" 
+        },
+        { 
+            "imagen": "img/testimonial-img-03.jpg", 
+            "texto": "Puedo afirmar que llevo gastado 7000u$s en lapices labiales. ", 
+            "firma": "Micaela Baton" 
+        },
+        { 
+            "imagen": "img/testimonial-img-01.jpg", 
+            "texto": "Desde que tengo 12 años me gusta el reggae, pero ahora de grande escucho rap... ", 
+            "firma": "Romana Riquelme" 
+        },
+        { 
+            "imagen": "img/testimonial-img-04.jpg", 
+            "texto": "Haberme teñido de rubio fue una buena desicion, ahora me veo mas rubia. ", 
+            "firma": "Jacinta Rosa" 
+        }
+    ],
+    
+    "qland_contacto_titulo": "Contactenos",
+    "qland_contacto_texto": "Este texto sirve para que comuniques lo bueno y divertido que es contactarse con nuestro contact center.",
+    "qland_ver_chat": false,
+    "qland_chat_texto": "Abrir Chat para saber mas",
+    "qland_mail": "ntello@aa2000.com.ar",
+    "qland_telefono" : "4578-0579",
+    "qland_ubicacion" : "Donde estamos"
+    
+}
