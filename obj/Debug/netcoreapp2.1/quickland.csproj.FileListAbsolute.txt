@@ -12,3 +12,17 @@
 /home/unarix/Documentos/code/quickland/obj/Debug/netcoreapp2.1/quickland.RazorTargetAssemblyInfo.cache
 /home/unarix/Documentos/code/quickland/obj/Debug/netcoreapp2.1/quickland.dll
 /home/unarix/Documentos/code/quickland/obj/Debug/netcoreapp2.1/quickland.pdb
+C:\Users\ntello\Documents\code\quickland\bin\Debug\netcoreapp2.1\quickland.deps.json
+C:\Users\ntello\Documents\code\quickland\bin\Debug\netcoreapp2.1\quickland.runtimeconfig.json
+C:\Users\ntello\Documents\code\quickland\bin\Debug\netcoreapp2.1\quickland.runtimeconfig.dev.json
+c:\Users\ntello\Documents\code\quickland\bin\Debug\netcoreapp2.1\quickland.dll
+c:\Users\ntello\Documents\code\quickland\bin\Debug\netcoreapp2.1\quickland.pdb
+c:\Users\ntello\Documents\code\quickland\obj\Debug\netcoreapp2.1\quickland.csprojAssemblyReference.cache
+c:\Users\ntello\Documents\code\quickland\obj\Debug\netcoreapp2.1\quickland.csproj.CoreCompileInputs.cache
+c:\Users\ntello\Documents\code\quickland\obj\Debug\netcoreapp2.1\quickland.RazorAssemblyInfo.cache
+c:\Users\ntello\Documents\code\quickland\obj\Debug\netcoreapp2.1\quickland.RazorAssemblyInfo.cs
+c:\Users\ntello\Documents\code\quickland\obj\Debug\netcoreapp2.1\quickland.AssemblyInfoInputs.cache
+c:\Users\ntello\Documents\code\quickland\obj\Debug\netcoreapp2.1\quickland.AssemblyInfo.cs
+c:\Users\ntello\Documents\code\quickland\obj\Debug\netcoreapp2.1\quickland.RazorTargetAssemblyInfo.cache
+c:\Users\ntello\Documents\code\quickland\obj\Debug\netcoreapp2.1\quickland.dll
+c:\Users\ntello\Documents\code\quickland\obj\Debug\netcoreapp2.1\quickland.pdb

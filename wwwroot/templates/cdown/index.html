@@ -32,12 +32,17 @@
 				</a>
 			</div>
 
-			<h3 class="l1-txt1 txt-center p-t-30 p-b-100">
+			<h3 id="qland_titulo" class="l1-txt1 txt-center p-t-30 p-b-100">
 				Inauguracion NTP
 			</h3>
 
 			<div class="cd100"></div>
 
+			<h3 id="qland_titulo2" style="display: none" class="l1-txt1 txt-center p-t-30 p-b-100">
+
+			</h3>
+
+			<div class="cd200" style="display: none"></div>
 		</div>
 	</div>
 
@@ -60,13 +65,38 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 	
 	<script>
-		var countDownDate = new Date("Sep 30, 2019 23:59:59").getTime();
-		var now = new Date().getTime();
-		var distance = countDownDate - now;
+		
+		var urlParams = new URLSearchParams(window.location.search);
 
-		$('.cd100').countdown100(
-		distance);
+		if(urlParams.has('id'))
+			loadQland(urlParams.get('id'));
+		else
+			loadQland('1');
 
+		function loadQland(id)
+		{
+			console.log(id);
+
+			var countDownDate1;
+			var countDownDate2;
+			var now = new Date().getTime();
+			var distance = countDownDate1 - now;
+		
+			countDownDate1 = new Date("Sep 30, 2019 23:59:59").getTime();
+			var distance = countDownDate1 - now;
+			$('.cd100').countdown100(distance);
+
+			if (id == '2')
+			{
+				countDownDate2 = new Date("Oct 02, 2019 09:00:00").getTime();
+				var distance2 = countDownDate2 - now;
+				$('#qland_titulo2').html('Inicio Operaciones');
+				$('#qland_titulo2').css("display", "");
+				$('.cd200').countdown100(distance2);
+				$('.cd200').css("display","");
+			}
+		}
+		
 		
 	</script>
 <!--===============================================================================================-->

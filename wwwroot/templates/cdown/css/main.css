@@ -11,6 +11,11 @@ Primary use:
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
+html,
+body {
+  overflow-y: hidden;
+}
+
 @font-face {
   font-family: Montserrat-Regular;
   src: url('../fonts/Montserrat/Montserrat-Regular.ttf'); 
