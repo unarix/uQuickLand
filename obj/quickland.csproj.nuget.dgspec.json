@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ntello\\Documents\\code\\quickland\\quickland.csproj": {}
+    "/home/unarix/Documentos/code/quickland/quickland.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ntello\\Documents\\code\\quickland\\quickland.csproj": {
+    "/home/unarix/Documentos/code/quickland/quickland.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ntello\\Documents\\code\\quickland\\quickland.csproj",
+        "projectUniqueName": "/home/unarix/Documentos/code/quickland/quickland.csproj",
         "projectName": "quickland",
-        "projectPath": "C:\\Users\\ntello\\Documents\\code\\quickland\\quickland.csproj",
-        "packagesPath": "C:\\Users\\ntello\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ntello\\Documents\\code\\quickland\\obj\\",
+        "projectPath": "/home/unarix/Documentos/code/quickland/quickland.csproj",
+        "packagesPath": "/home/unarix/.nuget/packages/",
+        "outputPath": "/home/unarix/Documentos/code/quickland/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ntello\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/unarix/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -51,7 +51,6 @@
               "version": "[2.1.2, )"
             },
             "Microsoft.NETCore.App": {
-              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
