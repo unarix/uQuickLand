@@ -1,19 +1,19 @@
 {
              
-    "qland_titulo": "Plantilla Default",
-    "qland_subtitulo": "Como estas Aldana",
-    "qland_subtexto": "Este es un texto de bienvenida que no puede ser muy largo.",
-    "qland_notatitulo": "Que hacemos?",
-    "qland_notatexto": "Nosotros escribimos el texto de la seccion aca... este texto descriptivo puede ser un muy, muy pero muy largo texto; la seccion esta preparada para que puedas insertar bastante texto aqui, asique se creativo y usa muy bien la cabeza.",
+    "titulo": "Plantilla Default",
+    "subtitulo": "Como estas?",
+    "subtexto": "Este es un texto de bienvenida que no puede ser muy largo.",
+    "notatitulo": "Que hacemos?",
+    "notatexto": "Nosotros escribimos el texto de la seccion aca... este texto descriptivo puede ser un muy, muy pero muy largo texto; la seccion esta preparada para que puedas insertar bastante texto aqui, asique se creativo y usa muy bien la cabeza.",
     
-    "qland_opcion_uno_titulo": "Que ta la opción uno?",
-    "qland_opcion_uno_texto": "Este es el texto de la opcion para describir algo. Muchas veces presentar opciones ejemplifican lo que trataste de decir en el parrafo anterior.",
-    "qland_opcion_dos_titulo": "Quizas te guste la opcion dos",
-    "qland_opcion_dos_texto": "Este podria ser el texto que describe la opcion dos, quizas los usuarios quieran elegir o bien pudes usarlo para decorar.",
+    "opcion_uno_titulo": "Que ta la opción uno?",
+    "opcion_uno_texto": "Este es el texto de la opcion para describir algo. Muchas veces presentar opciones ejemplifican lo que trataste de decir en el parrafo anterior.",
+    "opcion_dos_titulo": "Quizas te guste la opcion dos",
+    "opcion_dos_texto": "Este podria ser el texto que describe la opcion dos, quizas los usuarios quieran elegir o bien pudes usarlo para decorar.",
     
-    "qland_ver_carrousel": true,
-    "qland_carrousel_titulo": "Carrousel",
-    "qland_carrousel_texto": "Este es el texto descriptivo del carrousel",
+    "ver_carrousel": true,
+    "carrousel_titulo": "Carrousel",
+    "carrousel_texto": "Este es el texto descriptivo del carrousel",
     "carrousel": 
     [
         { 
@@ -38,12 +38,12 @@
         }
     ],
     
-    "qland_contacto_titulo": "Contactenos",
-    "qland_contacto_texto": "Este texto sirve para que comuniques lo bueno y divertido que es contactarse con nuestro contact center.",
-    "qland_ver_chat": false,
-    "qland_chat_texto": "Abrir Chat para saber mas",
-    "qland_mail": "ntello@aa2000.com.ar",
-    "qland_telefono" : "4578-0579",
-    "qland_ubicacion" : "Donde estamos"
+    "contacto_titulo": "Contactenos",
+    "contacto_texto": "Este texto sirve para que comuniques lo bueno y divertido que es contactarse con nuestro contact center.",
+    "ver_chat": false,
+    "chat_texto": "Abrir Chat para saber mas",
+    "mail": "ntello@aa2000.com.ar",
+    "telefono" : "4578-0579",
+    "ubicacion" : "Donde estamos"
     
 }

@@ -16,7 +16,7 @@
   <body>
     <div id="qland">
       <!-- Dirty hack to show the title inner qland section! -->
-      <title>{{ qland_titulo }}</title> 
+      <title>{{ titulo }}</title> 
       
       <!-- Hero section -->
       <section id="home" class="text-white tm-font-big tm-parallax">
@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
           <div class="container">   
             <div class="tm-next">
-                <a href="#home" class="navbar-brand">{{ qland_titulo }}</a>
+                <a href="#home" class="navbar-brand">{{ titulo }}</a>
             </div>             
               
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,16 +36,16 @@
                     <a class="nav-link tm-nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link tm-nav-link" href="#secdos">{{ qland_notatitulo }}</a>
+                    <a class="nav-link tm-nav-link" href="#secdos">{{ notatitulo }}</a>
                 </li>
                 <li class="nav-item">
-                  <a v-if="qland_ver_carrousel" class="nav-link tm-nav-link" href="#testimonials">{{ qland_carrousel_titulo }}</a>
+                  <a v-if="ver_carrousel" class="nav-link tm-nav-link" href="#testimonials">{{ carrousel_titulo }}</a>
                 </li>
                 <!--li class="nav-item">
                     <a class="nav-link tm-nav-link" href="#gallery">Gallery</a>
                 </li-->
                 <li class="nav-item">
-                    <a class="nav-link tm-nav-link" href="#contact">{{ qland_contacto_titulo }}</a>
+                    <a class="nav-link tm-nav-link" href="#contact">{{ contacto_titulo }}</a>
                 </li>                    
               </ul>
             </div>        
@@ -54,9 +54,9 @@
         
         <div class="text-center tm-hero-text-container">
           <div class="tm-hero-text-container-inner">
-              <h2 class="tm-hero-title">{{ qland_subtitulo }}</h2>
+              <h2 class="tm-hero-title">{{ subtitulo }}</h2>
               <p class="tm-hero-subtitle">
-                  {{ qland_subtexto }}
+                  {{ subtexto }}
               </p>
           </div>        
         </div>
@@ -75,8 +75,8 @@
               <div class="row tm-content-box">
                   <div class="col-lg-12 col-xl-12">
                       <div class="tm-intro-text-container">
-                          <h2 class="tm-text-primary mb-4 tm-section-title">{{ qland_notatitulo }}</h2>
-                          <p class="mb-4 tm-intro-text"> {{ qland_notatexto }}</p>
+                          <h2 class="tm-text-primary mb-4 tm-section-title">{{ notatitulo }}</h2>
+                          <p class="mb-4 tm-intro-text"> {{ notatexto }}</p>
                       </div>
                   </div>
 
@@ -91,10 +91,10 @@
                   <div class="col-lg-5">
                       <div class="tm-intro-text-container">
                           <h2 class="tm-text-primary mb-4">
-                            {{ qland_opcion_uno_titulo }}
+                            {{ opcion_uno_titulo }}
                           </h2>
                           <p class="mb-4 tm-intro-text">
-                            {{ qland_opcion_uno_texto }}
+                            {{ opcion_uno_texto }}
                           </p>
                       </div>
                   </div>
@@ -105,10 +105,10 @@
                   <div class="col-lg-5">
                       <div class="tm-intro-text-container">
                           <h2 class="tm-text-primary mb-4">
-                              {{ qland_opcion_dos_titulo }}
+                              {{ opcion_dos_titulo }}
                           </h2>
                           <p class="mb-4 tm-intro-text">
-                              {{ qland_opcion_dos_texto }}
+                              {{ opcion_dos_texto }}
                           </p>
                       </div>
                   </div>
@@ -119,16 +119,16 @@
       </section>
       
       <section id="testimonials" class="tm-section-pad-top tm-parallax-2">      
-        <div v-if="qland_ver_carrousel" class="container tm-testimonials-content">
+        <div v-if="ver_carrousel" class="container tm-testimonials-content">
           <div class="row">
             <div class="col-lg-12 tm-content-box">
               
               <h2 class="text-white text-center mb-4 tm-section-title">
-                {{qland_carrousel_titulo}}
+                {{carrousel_titulo}}
               </h2>
               
               <p class="mx-auto tm-section-desc text-center">
-                {{qland_carrousel_texto}}
+                {{carrousel_texto}}
               </p>
 
               <div class="mx-auto tm-gallery-container tm-gallery-container-2">
@@ -241,39 +241,39 @@
           <div class="row">
               
               <div class="text-center col-12">
-                  <h2 class="tm-section-title mb-4">{{ qland_contacto_titulo }}</h2>
+                  <h2 class="tm-section-title mb-4">{{ contacto_titulo }}</h2>
                   <p class="mb-5">
-                    {{ qland_contacto_texto }}
+                    {{ contacto_texto }}
                   </p><br>
               </div>
 
               <div class="col-sm-12 col-md-6">
 
-                  <div v-if="qland_ver_chat" class="contact-item">
+                  <div v-if="ver_chat" class="contact-item">
                     <a rel="nofollow" href="https://ca.socialgateway.net/webchat/website/ping?style=friendly&hideCloseBtn=true" class="item-link">
                         <i class="far fa-2x fa-comment mr-4"></i>
-                        <span class="mb-0">{{qland_chat_texto}}</span>
+                        <span class="mb-0">{{chat_texto}}</span>
                     </a>              
                   </div>
                   
                   <div class="contact-item">
-                    <a rel="nofollow" href="mailto:{{qland_mail}}" class="item-link">
+                    <a rel="nofollow" href="mailto:{{mail}}" class="item-link">
                         <i class="far fa-2x fa-envelope mr-4"></i>
-                        <span class="mb-0">{{qland_mail}}</span>
+                        <span class="mb-0">{{mail}}</span>
                     </a>              
                   </div>
                   
                   <div class="contact-item">
                     <a rel="nofollow" href="https://www.google.com/maps" class="item-link">
                         <i class="fas fa-2x fa-map-marker-alt mr-4"></i>
-                        <span class="mb-0">{{ qland_ubicacion}}</span>
+                        <span class="mb-0">{{ ubicacion}}</span>
                     </a>              
                   </div>
                   
                   <div class="contact-item">
                     <a rel="nofollow" href="tel:0100200340" class="item-link">
                         <i class="fas fa-2x fa-phone-square mr-4"></i>
-                        <span class="mb-0">{{ qland_telefono }}</span>
+                        <span class="mb-0">{{ telefono }}</span>
                     </a>              
                   </div>
                   
@@ -307,7 +307,6 @@
       /* ----------------------------------------------------- */
       /*
       *** HELP: *** 
-      El Framework quickLand establece que todas las propiedades de un DATA deben comenzar con el comodin: "qland_".
       Este comodin permite al framework identificar que la propiedad de la plantilla es editable (para luego en el cuadro de ediciones
       del template se identifiquen y puedan armar los controles de edicion el usuario)
       */
