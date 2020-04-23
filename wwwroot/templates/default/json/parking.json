@@ -3,9 +3,9 @@
     
     "titulo": "Parking",
     "subtitulo": "Parking",
-    "subtexto": "Obtenga informacion del parking de Ezeiza.",
+    "subtexto": "Bienvenido al parking de Ezeiza, en esta web podra obtener informacion del parking de Ezeiza.",
     
-    "notatitulo": "Prevencion",
+    "notatitulo": "Recomendaciones",
     "notatexto": "Los síntomas más comunes son fiebre, tos, dolor de garganta y cansancio. Algunos casos pueden presentar complicaciones y requerir hospitalización. Puede afectar a cualquier persona, el riesgo de complicaciones aumenta en mayores de 60 años y personas con afecciones preexistentes (enfermedad cardiovascular, diabetes y enfermedad respiratoria crónica entre otras). En caso de presentar síntomas, aunque sean leves, consultar telefónicamente al sistema de salud. Ejemplo: 107 en CABA, 148 en Provincia de Buenos Aires, 0800-222-1002 a nivel nacional.",
     
     "opcion": 
@@ -23,18 +23,18 @@
     ],
 
     "ver_carrousel": true,
-    "carrousel_titulo": "Recomendaciones",
-    "carrousel_texto": "Cumpla con las siguientes recomendaciones en el aeropuerto",
+    "carrousel_titulo": "Servicios",
+    "carrousel_texto": "Aca puede ver los servicios disponibles",
     "carrousel": 
     [
         { 
             "imagen": "img/1.png", 
-            "texto": "Lavate las manos con jabon frecuentemente; intenta cantar hasta dos feliz cumpleaños mientras lo haces", 
+            "texto": "Descubierto E1: Es el parking que se encuentra frente a la TB", 
             "firma": "" 
         },
         { 
             "imagen": "img/2.png", 
-            "texto": "Estornuda y tose en el pliegue del codo, evita estornudar en ambientes cerrados, utiliza solo pañuelos descartables.", 
+            "texto": "Descubierto E2:", 
             "firma": "" 
         },
         { 
