@@ -93,6 +93,17 @@ blockquote {
   font-weight: bold;
 }
 
+.nav_logo {
+  width: 100px;
+  content:url("../img/a2klogo.png");
+}
+
+.nav_logo.scroll {
+  width: 100px;
+  content:url("../img/a2klogo2.png");
+}
+
+
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
   color: #38B;
@@ -144,7 +155,6 @@ blockquote {
 
 #home {
 	background-color: #222;
-  background-image: url(../img/infinite-loop-01.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 375px;
@@ -267,15 +277,18 @@ blockquote {
 #testimonials {
   color: white;
   background-image: url(../img/infinite-loop-02.jpg);
+  background-color: #3ba0dd;
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100%;
   position: relative;
 }
 
 @media (max-width: 991px) {
   #testimonials {
-    background-image: url(../img/infinite-loop-02-mobile.jpg);
+    background-image: url(../img/infinite-loop-02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
   }
 }
 
@@ -308,8 +321,9 @@ blockquote {
 }
 
 .tm-testimonial-item img {
-  border-radius: 50%;
+  /*border-radius: 10%;*/
   margin-bottom: 35px;
+  max-width: 180px;
 }
 
 .tm-testimonial-item figcaption {

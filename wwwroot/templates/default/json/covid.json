@@ -1,0 +1,78 @@
+{
+    "img_bk": "background-image: url(img/covid19.jpg)",
+    "titulo": "COVID-19",
+    "subtitulo": "COVID-19",
+    "subtexto": "Información y medidas de prevención del Ministerio de Salud de la Nación.",
+    "notatitulo": "Prevencion",
+    "notatexto": "Los síntomas más comunes son fiebre, tos, dolor de garganta y cansancio. Algunos casos pueden presentar complicaciones y requerir hospitalización. Puede afectar a cualquier persona, el riesgo de complicaciones aumenta en mayores de 60 años y personas con afecciones preexistentes (enfermedad cardiovascular, diabetes y enfermedad respiratoria crónica entre otras). En caso de presentar síntomas, aunque sean leves, consultar telefónicamente al sistema de salud. Ejemplo: 107 en CABA, 148 en Provincia de Buenos Aires, 0800-222-1002 a nivel nacional.",
+    
+    "opcion": 
+    [
+        {
+            "imagen": "img/testimonial-img-02.jpg", 
+            "titulo": "Medidas de prevención para el coronavirus y otras enfermedades respiratorias",
+            "texto": "Distanciamiento social (mantenete a un metro de distancia de otras personas) Lavate las manos frecuentemente con agua y jabón o alcohol en gel. Tosé o estornudá sobre el pliegue del codo o utilizá pañuelos descartables. No te lleves las manos a la cara. Ventilá bien los ambientes de tu casa y de tu lugar de trabajo. Desinfectá bien los objetos que se usan con frecuencia. No te automediques. En caso de presentar síntomas, aunque sean leves, consultá inmediatamente al sistema de salud, siguiendo las recomendaciones locales, para saber cómo hacer correctamente la consulta. Ejemplo: 107 en CABA, 148 en Provincia de Buenos Aires, 0800-222-1002 a nivel nacional."
+        },
+        {
+            "imagen": "img/testimonial-img-02.jpg", 
+            "titulo": "Mayores de 60 años, embarazadas y personas con patologías crónicas",
+            "texto": "Reforzá las recomendaciones de prevención de infecciones respiratorias: Distanciamiento social (mantenete a un metro de distancia de otras personas). Lavate las manos frecuentemente con agua y jabón o alcohol en gel. Tosé o estornudá sobre el pliegue del codo o utilizá pañuelos descartables. No te lleves las manos a la cara. Ventilá bien los ambientes de tu casa y de tu lugar de trabajo. Desinfectá bien los objetos que se usan con frecuencia. No te automediques. En caso de presentar síntomas, aunque sean leves, consultá inmediatamente al sistema de salud, siguiendo las recomendaciones locales , para saber cómo hacer correctamente la consulta. Ejemplo: 107 en CABA, 148 en Provincia de Buenos Aires, 0800-222-1002 a nivel nacional.En la medida de lo posible, delegá la realización de mandados o compra de medicamentos a personas de confianza o de tu entorno familiar que no pertenezcan a los grupos de riesgo.Las personas mayores de 60 años, embarazadas o quienes están dentro de los grupos de riesgo no deben convivir con personas que vengan desde el exterior.Las personas de 65 años y más deben vacunarse contra la gripe y el neumococo de acuerdo al calendario de vacunación nacional."
+        }
+    ],
+
+    "ver_carrousel": true,
+    "carrousel_titulo": "Recomendaciones",
+    "carrousel_texto": "Cumpla con las siguientes recomendaciones en el aeropuerto",
+    "carrousel": 
+    [
+        { 
+            "imagen": "img/1.png", 
+            "texto": "Lavate las manos con jabon frecuentemente; intenta cantar hasta dos feliz cumpleaños mientras lo haces", 
+            "firma": "" 
+        },
+        { 
+            "imagen": "img/2.png", 
+            "texto": "Estornuda y tose en el pliegue del codo, evita estornudar en ambientes cerrados, utiliza solo pañuelos descartables.", 
+            "firma": "" 
+        },
+        { 
+            "imagen": "img/3.png", 
+            "texto": "no te lleves las manos a los ojos, nariz ni boca. Si utilizas barbijo intenta no tocarlo desde el centro.", 
+            "firma": "" 
+        },
+        { 
+            "imagen": "img/4.png", 
+            "texto": "ventila bien los ambientes de tu lugar de trabajo", 
+            "firma": "" 
+        },
+        { 
+            "imagen": "img/5.png", 
+            "texto": "Limpia los objetos que usas con frecuencia", 
+            "firma": "" 
+        },
+        { 
+            "imagen": "img/6.png", 
+            "texto": "Permanece en tu domicilio", 
+            "firma": "" 
+        },
+        { 
+            "imagen": "img/7.png", 
+            "texto": "Reduci el contacto fisico", 
+            "firma": "" 
+        },
+        { 
+            "imagen": "img/8.png", 
+            "texto": "No compartas objetos de uso personal", 
+            "firma": "" 
+        }
+    ],
+    
+    "contacto_titulo": "Contactenos",
+    "contacto_texto": "Este texto sirve para que comuniques lo bueno y divertido que es contactarse con nuestro contact center.",
+    "ver_chat": false,
+    "chat_texto": "Abrir Chat para saber mas",
+    "mail": "ntello@aa2000.com.ar",
+    "telefono" : "4578-0579",
+    "ubicacion" : "Donde estamos"
+    
+}
