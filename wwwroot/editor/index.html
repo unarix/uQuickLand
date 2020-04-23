@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<title>QuickLand</title>
+		<link href="../css/bootstrap4/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+		<link href='lib/jstree/jstree.css' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href='css/layout.css' rel='stylesheet' type='text/css'>
+		<script src="lib/jquery-3.1.1.js"></script>
+		<script src="lib/jstree/jstree.js"></script>
+		<style>
+			.bd-placeholder-img {
+				font-size: 1.125rem;
+				text-anchor: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+		
+			@media (min-width: 768px) {
+				.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+				}
+			}
+		</style>
+
+	</head>
+	<body>
+		<header>
+			<div class="collapse bg-dark" id="navbarHeader">
+				<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-md-7 py-4">
+					<h4 class="text-white">QuickLand</h4>
+					<p class="text-muted">QuickLand te permite crear y editar landingpages de forma rapida y facil. Este framework utiliza plantillas que deben respetar el manifiesto quickland; pero agregar o crear una nueva plantilla es muy facil! </p>
+					</div>
+					<div class="col-sm-4 offset-md-1 py-4">
+					<h4 class="text-white">Contact</h4>
+					<ul class="list-unstyled">
+						
+						<li><a id="new-json-button" href="#" class="text-white">Nuevo</a></li>
+						<li><a id="load-json-button" href="#" class="text-white">Modificar</a>
+						<li><a id="load-file-button" href="#" class="text-white">Desde JSON File</a></li>
+						<li><a id="load-string-button" href="#" class="text-white">Desde JSON String</a></li>
+						<li id="save-json-button">
+							<button class="bar-items">Guardar...</button>
+							<ul>
+								<a id="save-file-button">
+									<li class="menu-items">como JSON File</li>
+								</a>
+								<a id="save-string-button">
+									<li class="menu-items">como JSON String</li>
+								</a>
+							</ul>
+						</li>
+						<li id="edit-button">
+							<button class="bar-items">Editar</button>
+							<ul>
+								<a id="copy-button">
+									<li class="menu-items">Copiar objeto</li>
+								</a>
+								<a id="paste-button">
+									<li class="menu-items">Pegar objeto</li>
+								</a>
+							</ul>
+						</li>
+						<li id="edit-button">
+							<button class="bar-items" id="setting-button">Configuracion</button>
+						</li>
+
+
+
+					</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="navbar navbar-dark bg-dark shadow-sm">
+				<div class="container d-flex justify-content-between">
+				<a href="#" class="navbar-brand d-flex align-items-center">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+					<strong>QuickLand</strong>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				</div>
+			</div>
+		</header>
+
+		<main role="main">
+
+			<div class="modal" id="modal-string-bg">
+				<div id="modal-string" class="modal-content">
+					<h2>Load from JSON string</h2>
+					<textarea id="string-input" class="string-input" placeholder="Enter your JSON string here"></textarea>
+					<p align="right">
+						<button id="load-string" class="raised-button">Cargar JSON string</button>
+					</p>
+
+				</div>
+			</div>
+			<div class="modal" id="modal-string-out-bg">
+				<div id="modal-string-out" class="modal-content">
+					<h2>Output as JSON string</h2>
+					<textarea id="string-output" class="string-input" readonly></textarea>
+					<p align="right">
+						<button id="copy-string" class="raised-button">Copiar al clipboard</button>
+					</p>
+
+				</div>
+			</div>
+			<div class="modal" id="modal-new-json-bg">
+				<div id="modal-new-json-root" class="modal-content-small">
+					<h2>Elige un tipo de elemento</h2>
+					<label><input name="root" type="radio" id="option-ary" value="ary">Array</label><br>
+					<label><input name="root" type="radio" id="option-obj" value="obj">Objecto</label>
+					<p align="right">
+						<button id="new-json" class="raised-button">Crear nueva Landing</button>
+					</p>
+
+				</div>
+			</div>
+			<div class="modal" id="modal-setting-bg">
+				<div id="modal-setting" class="modal-content-small">
+					<h2>Configuracion</h2>
+					<label><input checked name="setting" type="checkbox" id="option-type-convert" value="ary">Tipo de dato automatico</label><br>
+					<p class="description">Convertir automaticamente al tipo de dato (number, boolean etc.).</p>
+					<p align="right">
+						<button id="save-setting" class="raised-button">Save</button>
+					</p>
+
+				</div>
+			</div>
+
+			<div id="browser">
+				<input id="searchbox" placeholder="Buscar..."/>
+				<div id="tree"></div>
+			</div>
+			<div id="editor">
+				<div id="editor-content"></div>
+			</div>
+		</main>
+	</body>
+	<footer>
+		<a href="https://github.com/tonY1883/jsonedit">© 2017 Yip Chung Nin</a>
+	</footer>
+	<script src="script/editor.js"></script>
+
+	<script src="../js/bootstrap4/bootstrap.bundle.min.js" ></script></body>
+
+
+</html>
